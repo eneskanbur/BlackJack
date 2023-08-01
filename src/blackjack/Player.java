@@ -6,6 +6,7 @@
 package blackjack;
 
 import java.util.ArrayList;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -13,10 +14,44 @@ import java.util.ArrayList;
  */
 public class Player {
     String name;
-    ArrayList<String> playerHand;
+    ArrayList<ImageIcon> playerHand;
+    private int playerScore =0;
+    private String playerStatus = null;
 
     public Player(String name) {
         this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public ArrayList<ImageIcon> getPlayerHand() {
+        return playerHand;
+    }
+
+    public void setPlayerHand(ArrayList<ImageIcon> playerHand) {
+        this.playerHand = playerHand;
+    }
+
+    public int getPlayerScore() {
+        return playerScore;
+    }
+
+    public void setPlayerScore(int playerScore) {
+        this.playerScore = playerScore;
+    }
+
+    public String getPlayerStatus() {
+        return playerStatus;
+    }
+
+    public void setPlayerStatus(String playerStatus) {
+        this.playerStatus = playerStatus;
     }
         
     

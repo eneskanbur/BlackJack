@@ -40,7 +40,7 @@ public class Cards {
         
     }
 
-    public ImageIcon dealCard(){
+    public ImageIcon hitCard(){
         ImageIcon card = null;
         int selectedCard = rnd.nextInt(15);
         int suits = rnd.nextInt(4);

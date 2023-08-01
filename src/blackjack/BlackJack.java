@@ -5,6 +5,8 @@
  */
 package blackjack;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Enes
@@ -16,6 +18,10 @@ public class BlackJack {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner scn = new Scanner(System.in);
+        String name = scn.next();
+        Dealer dealer = new Dealer();
+        Player player = new Player(name); 
         Cards cards = new Cards();
     }
     
